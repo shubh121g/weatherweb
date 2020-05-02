@@ -11,6 +11,7 @@ const viewpath=path.join(__dirname,'../template/views');
 
 
 const app=express();
+const port=process.env.PORT||3000;
 app.set('view engine','hbs')
 app.use(express.static(publicdirpath));
 app.set('views',viewpath);
@@ -86,7 +87,7 @@ app.get('*',(req,res)=>{
 })
 
 
-app.listen(3000,()=>{
-    console.log("server running wwe");
+app.listen(port,()=>{
+    console.log("server running wwe"+port);
     console.log(__dirname);
 })

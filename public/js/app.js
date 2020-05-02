@@ -27,7 +27,7 @@ formm.addEventListener('submit',(e)=>{
     mone.textContent="";
 mtwo.textContent="";
     const locc=inpp.value;
-    const uurl='http://localhost:3000/weather?address='+locc+'';
+    const uurl='/weather?address='+locc+'';
     fetch(uurl).then((response)=>{
 response.json().then((data)=>{
 if(data.error){
