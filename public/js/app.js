@@ -23,7 +23,7 @@ const mtwo=document.querySelector('#msgtwo');
 
 formm.addEventListener('submit',(e)=>{
     e.preventDefault();
-    console.log("hua kya");
+    console.log("kuch toh hua hey");
     mone.textContent="";
 mtwo.textContent="";
     const locc=inpp.value;
